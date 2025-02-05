@@ -158,6 +158,7 @@ def preprocess_excel(excel_file):
         df_excel = pd.read_excel(excel_file, sheet_name='Movimentação')
     except Exception as e:
         st.error("Erro ao ler o arquivo Excel. Verifique se o arquivo está correto e se o sheet 'Movimentação' existe.")
+        st.error(e)
         st.stop()
     
     df_excel = df_excel.rename(columns={
