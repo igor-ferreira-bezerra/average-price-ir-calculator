@@ -51,12 +51,6 @@ A **Calculadora de Preço Médio** é uma aplicação web desenvolvida em Python
 
 3. **Instale as dependências:**
 
-   Caso o repositório possua um arquivo `requirements.txt`:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-   Se não houver, instale manualmente:
    ```bash
    pip install streamlit pandas openpyxl
    ```
