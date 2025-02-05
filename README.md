@@ -51,8 +51,10 @@ A **Calculadora de Preço Médio** é uma aplicação web desenvolvida em Python
 
 3. **Instale as dependências:**
 
+   Utilize o arquivo `requirements.txt` para instalar todas as dependências:
+
    ```bash
-   pip install streamlit pandas openpyxl
+   pip install -r requirements.txt
    ```
 
 ## Como Usar
@@ -76,3 +78,22 @@ A **Calculadora de Preço Médio** é uma aplicação web desenvolvida em Python
      - Resultados para Ações.
 
 ## Estrutura do Projeto
+
+```
+average-price-ir-calculator/
+│
+├── calculator.py            # Arquivo principal da aplicação Streamlit
+├── README.md                # Este arquivo
+├── requirements.txt         # Lista de dependências
+└── data/                    # Arquivos de dados externos
+    ├── CNPJs_FII.csv
+    └── CNPJs_ACOES.csv
+```
+
+## Contribuição
+
+Contribuições são bem-vindas! Caso deseje reportar problemas ou sugerir melhorias, sinta-se à vontade para abrir uma _issue_ ou um _pull request_.
+
+## Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE). Consulte o arquivo `LICENSE` para mais detalhes.
