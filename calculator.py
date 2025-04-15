@@ -329,6 +329,15 @@ def calculate_results(df, ANO_BASE):
 
 def main():
     st.title("Calculadora de Preço Médio")
+    
+    st.info("""
+    Para obter o arquivo de movimentação:
+    1. Acesse https://www.investidor.b3.com.br/extrato/movimentacao
+    2. Faça login na sua conta
+    3. Selecione o período máximo possível 
+    4. Clique em "Baixar" para baixar o arquivo Excel
+    5. Faça upload do arquivo baixado abaixo
+    """)
 
     uploaded_xlsx = st.file_uploader("Faça o upload do arquivo Excel (.xlsx)", type=["xlsx"])
     ANO_BASE = st.number_input("Insira o Ano Base", min_value=1900, max_value=2100, value=datetime.datetime.now().year -1, step=1)
